@@ -244,3 +244,45 @@ Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
 1522055381226	geckodriver::marionette	ERROR	Failed to stop browser process
+1522055877621	geckodriver	INFO	geckodriver 0.20.0
+1522055877634	geckodriver	INFO	Listening on 127.0.0.1:54294
+1522055880640	mozrunner::runner	INFO	Running command: "E:\\Program Files\\Nightly\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.xnwPKwZntxpa"
+1522055884750	Marionette	INFO	Listening on port 54311
+1522055885074	Marionette	WARN	TLS certificate errors will be ignored for this session
+1522055885799	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: Error: It looks like the db connection has not initialized yet. Are you use .init was called? (resource://activity-stream/lib/ActivityStreamStorage.jsm:14:13) JS Stack trace: get db@ActivityStreamStorage.jsm:14:13
+getStore@ActivityStreamStorage.jsm:20:5
+set@ActivityStreamStorage.jsm:28:12
+uninit@SnippetsFeed.jsm:183:5
+onAction@SnippetsFeed.jsm:204:9
+_middleware/</<@Store.jsm:49:11
+Store/this[method]@Store.jsm:28:55
+uninit@Store.jsm:151:7
+uninit@ActivityStream.jsm:299:5
+uninit@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///E:/Program%20Files/Nightly/browser/features/activity-stream@bootstrap.js:79:5
+shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///E:/Program%20Files/Nightly/browser/features/activity-stream@bootstrap.js:181:3
+callBootstrapMethod@XPIProvider.jsm:4306:20
+observe@XPIProvider.jsm:2182:13
+GeckoDriver.prototype.quit@driver.js:3299:3
+Async*despatch@server.js:288:20
+async*execute@server.js:262:11
+async*onPacket/<@server.js:237:15
+async*onPacket@server.js:236:8
+_onJSONObjectReady/<@transport.js:500:9
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 14128, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14128, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 13484, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13484, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 8636, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[Child 14180, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14180, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\Administrator\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 13260, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522055888940	geckodriver::marionette	ERROR	Failed to stop browser process

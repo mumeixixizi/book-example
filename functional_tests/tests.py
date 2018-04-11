@@ -31,11 +31,12 @@ class NewVisitorTest(LiveServerTestCase):
         self.assertEqual(inputbox.get_attribute('placeholder'), 'Enter a to-do item')
         inputbox.send_keys('Buy peacock feathers')
         inputbox.send_keys(Keys.ENTER)
+
+        time.sleep(10)
+
         edith_list_url = self.browser.current_url
         self.assertRegex(edith_list_url, '/lists/.+')
         self.check_for_row_in_list_table('1: Buy peacock feathers')
-
-        time.sleep(10)
 
         inputbox = self.browser.find_element_by_id('id_new_item')
         inputbox.send_keys('Use peacock feathers to make a fly')
@@ -65,6 +66,8 @@ class NewVisitorTest(LiveServerTestCase):
         inputbox = self.browser.find_element_by_id('id_new_item')
         inputbox.send_keys('Buy milk')
         inputbox.send_keys(Keys.ENTER)
+
+        time.sleep(10)
 
         francis_list_url = self.browser.current_url
         self.assertRegex(francis_list_url, '/lists/.+')

@@ -42,7 +42,7 @@ def _update_settings(source_folder, site_name):
         chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)'
         key = ''.join(random.sample(chars, 25))
         append(secret_key_file, "SECRET_KEY = '%s'" % (key,))
-    append(settings_path, "\n" + "from .secret_key import SECRET_KEY")
+    append(settings_path, "from .secret_key import SECRET_KEY")
 
 
 def _update_virtualenv(source_folder):
